@@ -40,18 +40,18 @@ Mobile - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio
 |---|---|---|---|---|
 |Hamburger	|H	|1hr	|1.5hr	|-hr
 |Project Previews	|H	|3hr	|-hr	|-hr
-|Regular Nav	|H	|H	|-hr	|-hr
-|Adding Form	|H	|1.5hr	|-hr	|-hr
+|Regular Nav	|1H	|H	|-hr	|-hr
+|Adding Contact Form	|3H	|1.5hr	|-hr	|-hr
 |Other sections and flex	|M	|4hr	|2hr	|-hr
 |Working with API	|H	|3hrs	|2hr	|-hr
 |Responsive	|H	|3hr	|-hr	|-hr
 |Social Media Icons	|L	|1hr	|-hr	|-hr
-|Total	|H	|15.5hrs	|-hrs	|-hrs
+|Total	|H	|18hrs	|-hrs	|-hrs
 
 # PostMVP
 | Component	| Priority	| Estimated Time |	Time Invested	| Actual Time
 |---|---|---|---|---|
-|Carousel	|M	|2hr	|1.5hr	|-hr
+|Carousel	|M	|3hr	|1.5hr	|-hr
 |Dark mode	|L	|1hr	|-hr	|-hr
-|Fade-in on scroll	|L	|1.5H	|-hr	|-hr
-|Total	|H	|4.5hrs	|-hrs	|-hrs
+|Fade-in on scroll	|L	|1H	|-hr	|-hr
+|Total	|H	|5hrs	|-hrs	|-hrs
