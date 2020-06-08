@@ -9,7 +9,7 @@ Project Schedule
 |Day 5: Fri| Finalization| Incomplete
 
 
-# Desktop version
+ Desktop version
 -Toggle dark mode
 -Use grid
 -Clicking on nav bar links jumps to section of window
@@ -17,36 +17,41 @@ Project Schedule
 -scrollbar
 -contact form
 
-# Mobile version
+ Mobile version
 -Toggle dark mode
 --Clicking on nav bar links jumps to section of window
 -scrollbar
 -carousel through projects
+## References
+| What I want to incorporate | Link to site
+---|---
+|Toggle Dark Mode: | https://whitneylubin.com/
+|Click hamburger to open navigation: | https://pollenlondon.com/
+|On scroll-down fade in images/videos etc: | https://pollenlondon.com/
+|Click Nav Bar Items to scroll down in window: | https://www.lianapenn.com/
 
-What I want to incorporate / Link to site
-Toggle Dark Mode: https://whitneylubin.com/
-Click hamburger to open navigation: https://pollenlondon.com/
-On scroll-down fade in images/videos etc: https://pollenlondon.com/
-Click Nav Bar Items to scroll down in window: https://www.lianapenn.com/
+# Wireframes
+Desktop - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio%20wireframe%20-%20desktop.jpg
 
-Wireframe: Desktop - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio%20wireframe%20-%20desktop.jpg
-Wireframe: Mobile - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio%20wireframe%20-%20mobile.jpg
+Mobile - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio%20wireframe%20-%20mobile.jpg
 
-MVP
-Component	Priority	Estimated Time	Time Invetsted	Actual Time
-Hamburger	H	1hr	1.5hr	-hr
-Project Previews	H	3hr	-hr	-hr
-Regular Nav	H	H	-hr	-hr
-Adding Form	H	1.5hr	-hr	-hr
-Other sections and flex	M	4hr	2hr	-hr
-Working with API	H	3hrs	2hr	-hr
-Responsive	H	3hr	-hr	-hr
-Social Media Icons	L	1hr	-hr	-hr
-Total	H	15.5hrs	-hrs	-hrs
+# MVP
+| Component	| Priority	| Estimated Time |	Time Invested	| Actual Time
+|---|---|---|---|---|
+|Hamburger	|H	|1hr	|1.5hr	|-hr
+|Project Previews	|H	|3hr	|-hr	|-hr
+|Regular Nav	|H	|H	|-hr	|-hr
+|Adding Form	|H	|1.5hr	|-hr	|-hr
+|Other sections and flex	|M	|4hr	|2hr	|-hr
+|Working with API	|H	|3hrs	|2hr	|-hr
+|Responsive	|H	|3hr	|-hr	|-hr
+|Social Media Icons	|L	|1hr	|-hr	|-hr
+|Total	|H	|15.5hrs	|-hrs	|-hrs
 
-PostMVP
-Component	Priority	Estimated Time	Time Invetsted	Actual Time
-Carousel	M	2hr	1.5hr	-hr
-Dark mode	L	1hr	-hr	-hr
-Fade-in on scroll	L	1.5H	-hr	-hr
-Total	H	4.5hrs	-hrs	-hrs
+# PostMVP
+| Component	| Priority	| Estimated Time |	Time Invested	| Actual Time
+|---|---|---|---|---|
+|Carousel	|M	|2hr	|1.5hr	|-hr
+|Dark mode	|L	|1hr	|-hr	|-hr
+|Fade-in on scroll	|L	|1.5H	|-hr	|-hr
+|Total	|H	|4.5hrs	|-hrs	|-hrs
