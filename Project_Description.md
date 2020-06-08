@@ -2,7 +2,7 @@ Project Schedule
 
 |  Day | Deliverable | Time Spent
 |---|---|---|
-|Day 1: Mon| Wireframes / MVP / Timeline| Incomplete
+|Day 1: Mon| Wireframes / MVP / Timeline| Complete
 |Day 2: Tue| Pseudocode / Build HTML / Responsive Design / CSS Grid/Flexbox| Incomplete
 |Day 3: Wed| Nav Bar and Hamburger / About Me| Incomplete
 |Day 4: Thur| Carousel Projects / Contact Me Page / Working Prototype| Incomplete
