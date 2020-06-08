@@ -1,4 +1,15 @@
-Desktop version
+Project Schedule
+
+|  Day | Deliverable | Time Spent
+|---|---|---|
+|Day 1: Mon| Wireframes / MVP / Timeline| Incomplete
+|Day 2: Tue| Pseudocode / Build HTML / Responsive Design / CSS Grid/Flexbox| Incomplete
+|Day 3: Wed| Nav Bar and Hamburger / About Me| Incomplete
+|Day 4: Thur| Carousel Projects / Contact Me Page / Working Prototype| Incomplete
+|Day 5: Fri| Finalization| Incomplete
+
+
+# Desktop version
 -Toggle dark mode
 -Use grid
 -Clicking on nav bar links jumps to section of window
@@ -6,7 +17,7 @@ Desktop version
 -scrollbar
 -contact form
 
-Mobile version
+# Mobile version
 -Toggle dark mode
 --Clicking on nav bar links jumps to section of window
 -scrollbar
