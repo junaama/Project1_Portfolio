@@ -8,20 +8,20 @@ Project Schedule
 |Day 4: Thur| Carousel Projects / Contact Me Page / Working Prototype| Incomplete
 |Day 5: Fri| Finalization| Incomplete
 
+### Components
+##### Desktop version
+1. Toggle dark mode
+2. Use grid
+3. Clicking on nav bar links jumps to section of window
+4. On scoll down, fade in effect on elements
+5. Scrollbar
+6. Contact form
 
- Desktop version
--Toggle dark mode
--Use grid
--Clicking on nav bar links jumps to section of window
--on scoll down, fade in effect on elements
--scrollbar
--contact form
-
- Mobile version
--Toggle dark mode
---Clicking on nav bar links jumps to section of window
--scrollbar
--carousel through projects
+##### Mobile version
+1. Toggle dark mode
+2. Clicking on nav bar links jumps to section of window
+3. Scrollbar
+4. Carousel through projects
 ## References
 | What I want to incorporate | Link to site
 ---|---
