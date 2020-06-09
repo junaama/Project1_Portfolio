@@ -1,3 +1,6 @@
+$(() => {
+//color shceme https://www.isharearena.com/wp-content/uploads/2018/04/Smart-city-illustration-for-Website-header-UI.png
+//https://www.isharearena.com/wp-content/uploads/2018/04/Art-Website-UI-Header.jpg
 console.log('app.js', $)
 //toggle dark mode button, hamburger icon, nav separate elements
 
@@ -6,17 +9,62 @@ const $body = $('body');
 const $mainPage = $('.main-page');
 const $header = $('.header');
 const $mainBody = $('.main-body');
-const $title = $('<div>').addClass('main-title').html('<p>Naama Paulemont</p><p>Software Engineer</p>')
-$header.append($title);
-const $aboutMe = $('<div>').addClass('about-me').html('<h3>About Me</h3><article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras semper. Consequat semper viverra nam libero justo laoreet sit amet. Eleifend donec pretium vulputate sapien. Sem nulla pharetra diam sit. Cras ornare arcu dui vivamus arcu. A erat nam at lectus urna duis. Ut aliquam purus sit amet luctus venenatis. Orci ac auctor augue mauris. Nunc consequat interdum varius sit amet. Tempus egestas sed sed risus pretium quam vulputate dignissim. Erat velit scelerisque in dictum non consectetur a erat. Senectus et netus et malesuada fames. Tincidunt eget nullam non nisi est.</article>');
-$mainBody.append($aboutMe);
-const $projectWrapper = $('<div>').addClass('projects-wrapper');
 
-const $contactMe = $('<div>').addClass('contact-me').html('<h3>Get In Touch</h3>');
-const $buttons = $('<div>').html('<button>Github</button><button>LinkedIn</button><button>Email</button><p><a href="mailto:0naama0@gmail.com">Send to 0naama0@gmail</a></p>')
-$contactMe.append($buttons);
-$mainBody.append($contactMe);
-const $footer = $('<footer>').html('<p>Made with love by Naama Paulemont</p>');
-$mainPage.append($footer);
-//chemdoodle for N P interactive design
+// const $navButton = $('nav button');
+//     const $nav = $('nav')
+//     $navButton.on('click', () => {
+//         $nav.toggleClass('open')
+//     })
 
+
+//dark mode toggle button
+const toggleSlider = $('.slider, .slider:before');
+toggleSlider.on('click', ()=>{
+    $body.toggleClass('dark-mode')
+    $header.toggleClass('header-dark')
+})
+//have to change to jquery somehow
+
+$('nav button').on('click', () => {
+    $('nav').toggleClass('open');
+});
+
+$(window).on('resize', () => {
+    if (window.innerWidth > 768) {
+        $('nav').removeClass('open');
+    }
+})
+//end dark mode toggle code
+
+let sheetUrl = 'https://docs.google.com/spreadsheets/d/15rkSjf8Ls-mUssYyTipx13ORrQYkhsUKen46LnwLKno/edit?usp=sharing'
+let sheetAsJSON = 'https://spreadsheets.google.com/feeds/list/15rkSjf8Ls-mUssYyTipx13ORrQYkhsUKen46LnwLKno/od6/public/values?alt=json'
+$.ajax({
+    url: sheetAsJSON,
+  }).then((data) => {
+      console.log("data", data);
+      const projects = data.feed.entry.map(project => {
+        return {
+            title: project.gsx$title.$t,
+            image: project.gsx$image.$t,
+            description: project.gsx$description.$t,
+            url: project.gsx$url.$t
+        }
+      })
+      app(projects)
+  })
+  .catch( err => console.log('err', err))
+console.log('running after ajax')
+
+function app(projectsArr){
+    console.log('inside app - projects', projectsArr)
+    projectsArr.forEach( project => {
+    let $updateImage = $('.carousel-item img');
+    console.log($updateImage)
+    $updateImage.attr('src', project.image)
+    })
+}
+//carousel sources: https://codepen.io/pascaloliv/pen/LVZaeE https://codepen.io/junaama/pen/WNrreKM https://kenwheeler.github.io/slick/
+
+
+
+})
