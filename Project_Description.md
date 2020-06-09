@@ -38,9 +38,9 @@ Mobile - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio
 # MVP
 | Component	| Priority	| Estimated Time |	Time Invested	| Actual Time
 |---|---|---|---|---|
-|Hamburger	|H	|1hr	|-hr	|-hr
+|Hamburger	|H	|1hr	|2hr	|-hr
 |Project Previews	|H	|3hr	|-hr	|-hr
-|Regular Nav	|1H	|H	|-hr	|-hr
+|Regular Nav	|1H	|H	|3hr	|-hr
 |Adding Contact Form	|3H	|-hr	|-hr	|-hr
 |Other sections and flex	|M	|4hr	|-hr	|-hr
 |Working with API	|H	|3hrs	|-hr	|-hr
@@ -52,6 +52,6 @@ Mobile - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio
 | Component	| Priority	| Estimated Time |	Time Invested	| Actual Time
 |---|---|---|---|---|
 |Carousel	|M	|3hr	|-hr	|-hr
-|Dark mode	|L	|1hr	|-hr	|-hr
+|Dark mode	|L	|1hr	|3hr	|-hr
 |Fade-in on scroll	|L	|1H	|-hr	|-hr
 |Total	|H	|5hrs	|-hrs	|-hrs
