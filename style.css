@@ -212,15 +212,24 @@ nav ul {
   .projects-wrapper {
     /* background-color: #4B755E; */
     text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
+    
   }
   .projects-wrapper h3 {
     font-family: 'Bebas Neue';
     font-size: 2.5rem;
+  }
+  /* max width fixed overflow bug */
+ .project-item img{
+    max-width: 100%;
+    border: 4px solid #4E7D64;
+    border-radius: 1rem;
   }
   .contact-me {
     text-align: center;
@@ -250,6 +259,7 @@ nav ul {
     text-align: center;
     color: black;
   }
+  /* tablet */
   @media screen  and (min-width: 768px) {
     .header nav .left {
       display: flex;
@@ -261,5 +271,12 @@ nav ul {
   
     nav button {
       display: none;
+    }
+  }
+  /* desktop */
+  @media screen and (min-width: 1024px) {
+
+    .header {
+      background-size: cover;
     }
   }

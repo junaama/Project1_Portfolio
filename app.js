@@ -6,6 +6,7 @@ console.log('app.js', $)
 const $body = $('body');
 const $header = $('.header');
 const $nav = $('nav');
+const $projectsWrapper = $('.projects-wrapper')
 //dark mode toggle button
 const toggleSlider = $('.slider, .slider:before');
 toggleSlider.on('click', ()=>{
@@ -24,36 +25,6 @@ $(window).on('resize', () => {
     }
 })
 //close nav page
-// //make navbar sticky ref: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
-// // When the user scrolls the page, execute myFunction
-// window.onscroll = function() {myFunction()};
-// // Get the navbar
-// // var navbar = document.getElementById("navbar");
-
-// // Get the offset position of the navbar
-// let sticky = $nav.offsetTop;
-
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     $nav.classList.add("sticky")
-//   } else {
-//     $nav.classList.remove("sticky");
-//   }
-// }
-// //end sticky navbar
-// $(window).scroll(function(){
-//     if($(this).scrollTop() > pos.top+menu.height() && menu.hasClass('default')){
-//         menu.fadeOut('fast', function(){
-//             $(this).removeClass('default').addClass('sticky').fadeIn('fast');
-//         });
-//     }else if($(this).scrollTop() <= pos.top && menu.hasClass('sticky')){
-//         menu.fadeOut('fast', function(){
-//             $(this).removeClass('sticky').addClass('default').fadeIn('fast');
-//         });
-//     }
-// });
-
 //START ref https://codepen.io/_codemics/pen/PwEbYJ/
 // grab the initial top offset of the navigation 
 var stickyNavTop = $('nav').offset().top;
@@ -77,7 +48,7 @@ $(window).scroll(function() {
  stickyNav();
 });
 //END
-//link spreadsheet for carousel contents
+//link spreadsheet for contents
 let sheetUrl = 'https://docs.google.com/spreadsheets/d/15rkSjf8Ls-mUssYyTipx13ORrQYkhsUKen46LnwLKno/edit?usp=sharing'
 let sheetAsJSON = 'https://spreadsheets.google.com/feeds/list/15rkSjf8Ls-mUssYyTipx13ORrQYkhsUKen46LnwLKno/od6/public/values?alt=json'
 $.ajax({
@@ -100,15 +71,18 @@ console.log('running after ajax')
 function app(projectsArr){
     console.log('inside app - projects', projectsArr)
     projectsArr.forEach( project => {
-    let $updateImage = $('.carousel-item img');
-    console.log($updateImage)
-    $updateImage.attr('src', project.image)
+    
+    let $createDiv = $('<div>').addClass('project-item');
+    let $addTitle = $('<h4>').text(project.title);
+    let $addImage = $('<img>').attr('src', project.image).attr('alt', project.description);
+    let $addDescription = $('<p>').text(project.description)
+    let $addLink = $('<a>').attr('href', project.url).text('Code')
+    $addDescription.append($addLink);
+    $createDiv.append($addTitle).append($addImage).append($addDescription);
+    $projectsWrapper.append($createDiv);
     })
 }
-//end carousel jquery
-
-//carousel sources: https://codepen.io/pascaloliv/pen/LVZaeE https://codepen.io/junaama/pen/WNrreKM https://kenwheeler.github.io/slick/
-
+//end  jquery
 
 
 })
