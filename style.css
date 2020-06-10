@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Titillium+Web:300i,400,600,700,900');
-
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Bebas+Neue&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-    background-color: #ccc;
+    background-color: #CFDCD3;
     color: #4E7D64;
     font-size: 20px;
+    font-family: 'Amiri', 'Merriweather', serif;
 }
 .dark-mode {
-    background-color: #1C1860;
-    color: #F58B97;
+    background-color: #4E7D64;
+    color: #B7C9BC;
 }
 .header {
     background-color: #ccc;
@@ -35,12 +36,13 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 15px 30px;
+    background-color: #B0C4B9;
 }
 
 nav .left {
   position: fixed;
   width: 100%;
-  background-color: #1a2238;
+  background-color: #39604B;
   color: yellow;
   left: 0;
   top: 0;
@@ -59,7 +61,7 @@ nav button span{
   height: 2px;
   width: 20px;
   margin: 4px 0;
-  background-color: #F58B97;
+  background-color: #4E7D64;
   display: block;
 }
 nav button {
@@ -78,7 +80,7 @@ nav ul {
  nav a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 2rem;
 }
 
 .open .left {
@@ -95,7 +97,6 @@ nav ul {
   font-size: 20px;
 }
 
-
 .left a, .right a {
   font-weight: 400;
   letter-spacing: 1px;
@@ -105,26 +106,24 @@ nav ul {
   justify-content: flex-start;
 }
 
-.right {
-  justify-content: flex-end;
-}
 
 .left a {
   margin-right: 30px;
 }
-
-.right a{
-  margin-left: 30px;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .main-title {
   margin-top: 5vh;
-  color: #F58B97;
+  color: #4E7D64;
   text-align: center;
 }
 
 .main-title p {
-  font-family: "Merriweather", serif;
+  font-family: 'Bebas Neue', cursive;
   font-size: 70px;
   font-weight: 100;
 }
@@ -132,38 +131,14 @@ nav ul {
     align-items: center;
     text-align: center;
 }
-/* 
-.toggle {
-    display: block;
-    position: relative;
-    cursor: pointer;
-}
-.toggle input {
-    width: 2rem;
-    height: 2rem;
-    opacity: 30%;
-    cursor: pointer;
-}
-.slider {
-    background-color: orange;
-    border-radius: 30%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 2rem;
-    height: 2rem;
-} */
-/*have to center on page*/
-/* The switch - the box around the slider */
+
+/* Toggle - the box around the slider */
 
 .toggle {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-    
   }
   
   /* Hide default HTML checkbox */
@@ -218,22 +193,64 @@ nav ul {
     margin: 1.5rem;
   }
   .about-me {
-   text-align: center;
+   font-family: 'Amiri', serif;
+   display: flex;
+   flex-direction: column;
    width: 100%;
    height: 100vh;
-   font-size: 190%;
+   font-size: 2rem;
+   text-align: center;
    align-items: center;
    justify-content: center;
+   /* background-color: #5A8970; */
   }
+  .about-me h3 {
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue';
+  }
+
   .projects-wrapper {
+    /* background-color: #4B755E; */
     text-align: center;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects-wrapper h3 {
+    font-family: 'Bebas Neue';
+    font-size: 2.5rem;
   }
   .contact-me {
     text-align: center;
-    height: 50vh;
+    color: black;
   }
-  @media screen and (min-width: 768px) {
+  .contact-me button {
+    background-color: white;
+    margin: 0 1rem 0 1rem;
+    padding: .5rem;
+    border: 3px solid #B6C6BB;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  .contact-me button:hover {
+    background-color: #4E7D64;
+  }
+  .contact-me a {
+    color: #4E7D64;
+    text-decoration: none;
+    text-align: center;
+  }
+  .contact-me a:hover {
+    color: #B6C6BB;
+  }
+  footer {
+    /* background-color: #C9D6CD; */
+    text-align: center;
+    color: black;
+  }
+  @media screen  and (min-width: 768px) {
     .header nav .left {
       display: flex;
       position: initial;
