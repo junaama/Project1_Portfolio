@@ -7,22 +7,31 @@ const $body = $('body');
 const $header = $('.header');
 const $projectsWrapper = $('.projects-wrapper');
 const $projectItems = $('.projectItems');
+const $darkModeButton = $('.dark-mode-container');
+const $stylesheetLink = $('#styles');
 //dark mode toggle button
 const toggleSlider = $('.slider, .slider:before');
 toggleSlider.on('click', ()=>{
-    $body.toggleClass('dark-mode')
-    $header.toggleClass('header-dark')
+    
+    $stylesheetLink.attr('href', 'darkstyle.css');
+    
 })
 //end dark mode toggle code
 //open nav page
 $('nav button').on('click', () => {
     $('nav').toggleClass('open');
+    $darkModeButton.toggleClass('dark-open');
 });
 
 $(window).on('resize', () => {
     if (window.innerWidth > 768) {
         $('nav').removeClass('open');
     }
+})
+//close navbar when clicking on links
+$('.left li').on('click', ()=>{
+    $('nav').toggleClass('open');
+    $darkModeButton.toggleClass('dark-open');
 })
 //close nav page
 //START ref https://codepen.io/_codemics/pen/PwEbYJ/
