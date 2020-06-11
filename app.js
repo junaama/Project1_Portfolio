@@ -83,6 +83,6 @@ function app(projectsArr){
     })
 }
 //end  jquery
-
+//contact form ref https://www.w3schools.com/howto/howto_css_contact_form.asp
 
 })

@@ -232,6 +232,9 @@ nav ul {
     border: 4px solid #4E7D64;
     border-radius: 1rem;
   }
+  .projects-h3-inside {
+    display: none;
+  }
   .contact-me {
     text-align: center;
     color: black;
@@ -301,8 +304,38 @@ nav ul {
     .header {
       background-size: cover;
     }
+    .projects-h3 {
+      display: none;
+    }
     .projects-wrapper {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      
+    }
+    .projects-h3-inside {
+      display: grid;
+      grid-column: 2;
+      grid-row: 1;
+      background-color: #b0c4b9;
+    }
+    .project-item {
+      grid-column: 1;
+      grid-row: 1;
+      overflow-y: scroll;
+    }
+    .about-me {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+    .about-me h3 {
+      margin-top: 50vh;
+    }
+    .about-me div {
+      background-color: #b0c4b9;
+      height: 100%;
+    }
+    .about-me article {
+      /* flex-basis: 50%; */
     }
   }
