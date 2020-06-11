@@ -265,6 +265,7 @@ nav ul {
   .contact-form {
     display: none;
   }
+
   /* tablet */
   @media screen  and (min-width: 768px) {
     .header nav .left {
@@ -279,8 +280,37 @@ nav ul {
       display: none;
     }
     .projects-wrapper {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
+    }
+    .projectItems {
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+    }
+    .item1 {
+      grid-column: 1;
+    }
+    .project-item p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .project-item p a {
+      padding-top: 5px;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+      background-color: white;
+      color: #4D7E68;
+      border: 3px solid #B6C6BB;
+      border-radius: 1rem;
+    }
+    .project-item p a:hover {
+      color: #B6C6BB;
+      background-color: #4E7C63;
     }
     .contact-form {
       display: block;
@@ -301,7 +331,6 @@ nav ul {
     }
     nav ul{
       margin: 0;
-      
     }
   }
   /* desktop */
@@ -331,7 +360,7 @@ nav ul {
     .item1 {
       grid-row: 1;
     }
-    .project-item p {
+    /* .project-item p {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -350,7 +379,7 @@ nav ul {
     .project-item p a:hover {
       color: #B6C6BB;
       background-color: #4E7C63;
-    }
+    } */
     /* is there a way to span all the row instead of hardcoding */
     .projects-wrapper .h3 {
       grid-column: 2;
