@@ -4,7 +4,7 @@ Project Schedule
 |---|---|---|
 |Day 1: Mon| Wireframes / MVP / Timeline| Complete
 |Day 2: Tue| Pseudocode / Build HTML / Responsive Design / CSS Grid/Flexbox| Incomplete
-|Day 3: Wed| Nav Bar and Hamburger / About Me| Incomplete
+|Day 3: Wed| Nav Bar and Hamburger / About Me| Complete
 |Day 4: Thur| Carousel Projects / Contact Me Page / Working Prototype| Incomplete
 |Day 5: Fri| Finalization| Incomplete
 
@@ -39,12 +39,12 @@ Mobile - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio
 | Component	| Priority	| Estimated Time |	Time Invested	| Actual Time
 |---|---|---|---|---|
 |Hamburger	|H	|1hr	|2hr	|-hr
-|Project Previews	|H	|3hr	|-hr	|-hr
-|Regular Nav	|1H	|H	|3hr	|-hr
-|Adding Contact Form	|3H	|-hr	|-hr	|-hr
+|Project Previews	|H	|3hr	|6+hr	|-hr
+|Regular Nav	|H	|1H	|3hr	|-hr
+|Adding Contact Form	|H	|2hr	|1hr	|-hr
 |Other sections and flex	|M	|4hr	|-hr	|-hr
-|Working with API	|H	|3hrs	|-hr	|-hr
-|Responsive	|H	|3hr	|-hr	|-hr
+|Working with API	|H	|3hrs	|1hr	|-hr
+|Responsive	|H	|3hr	|8+hr	|-hr
 |Social Media Icons	|L	|1hr	|-hr	|-hr
 |Total	|H	|18hrs	|-hrs	|-hrs
 
