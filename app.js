@@ -5,8 +5,8 @@ console.log('app.js', $)
 //toggle dark mode button, hamburger icon, nav separate elements
 const $body = $('body');
 const $header = $('.header');
-const $nav = $('nav');
-const $projectsWrapper = $('.projects-wrapper')
+const $projectsWrapper = $('.projects-wrapper');
+const $projectItems = $('.projectItems');
 //dark mode toggle button
 const toggleSlider = $('.slider, .slider:before');
 toggleSlider.on('click', ()=>{
@@ -66,20 +66,24 @@ $.ajax({
       app(projects)
   })
   .catch( err => console.log('err', err))
-console.log('running after ajax')
+
 
 function app(projectsArr){
+    let i = 0;
     console.log('inside app - projects', projectsArr)
     projectsArr.forEach( project => {
-    
-    let $createDiv = $('<div>').addClass('project-item');
+    i++;
+    // let $createDiv = $('<div>').addClass('project-item');
+    let $createDiv = $('<div>').addClass(`project-item item${i}`);
+    console.log($createDiv)
     let $addTitle = $('<h4>').text(project.title);
     let $addImage = $('<img>').attr('src', project.image).attr('alt', project.description);
-    let $addDescription = $('<p>').text(project.description)
+    let $addDescription = $('<p>').text(project.description);
     let $addLink = $('<a>').attr('href', project.url).text('Code')
     $addDescription.append($addLink);
     $createDiv.append($addTitle).append($addImage).append($addDescription);
-    $projectsWrapper.append($createDiv);
+    $projectItems.append($createDiv);
+    $projectsWrapper.append($projectItems);
     })
 }
 //end  jquery

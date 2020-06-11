@@ -320,18 +320,47 @@ nav ul {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       margin-bottom: 0;
-      column-gap: 0;
+      column-gap: 15px;
       row-gap: 0;
       height: 100vh;
+      
+      
     }
-   
-    .project-item {
-      grid-column: 1;
-      grid-row: 1;
-      /* i want it to scroll */
+    .projectItems {
       overflow-y: scroll;
+      height: 100vh;
     }
+    .project-item  {
+      grid-column: 1;
+      /* grid-row: 1; */
+      /* i want it to scroll */
+      /* overflow: auto; */
+    }
+    .item1 {
+      grid-row: 1;
+    }
+    .project-item p {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .project-item p a {
+      
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+      background-color: white;
+      color: black;
+      border: 2px solid red;
+    }
+    .project-item p a:hover {
+      background-color: gray;
+    }
+    /* is there a way to span all the row instead of hardcoding */
     .projects-wrapper .h3 {
+      grid-column: 2;
+      grid-row: 1 / 5;
       height: 100%;
       width: 100%;
       background-color: #b0c4b9;
@@ -341,14 +370,10 @@ nav ul {
       grid-column: 2;
       grid-row: 1;
       /* height: 100%; */
-      
       margin-top: 50vh;
       font-family: 'Bebas Neue', serif;
       font-size: 2rem;
     }
-    /* div h3 {
-      margin-bottom: 0;
-    } */
     .about-me {
       display: grid;
       grid-template-columns: 1fr 1fr;
