@@ -20,7 +20,6 @@ toggleSlider.on('click', ()=>{
     } else if($darkModeCheckbox.prop('checked') === false){
         $stylesheetLink.attr('href', 'darkstyle.css');
     }
-
 })
 //end dark mode toggle code
 
