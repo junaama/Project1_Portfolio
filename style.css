@@ -31,10 +31,10 @@ body {
     text-align: center;
     justify-content: center;
 }
-/* madelines code, will rewrite later */
+/* nav ref lecture */
 nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 15px 30px;
   background-color: #B0C4B9;
 }
@@ -43,7 +43,6 @@ nav .left {
   position: fixed;
   width: 100%;
   background-color: #39604B;
-  /* color: yellow; */
   left: 0;
   top: 0;
   padding: 60px;
@@ -51,7 +50,7 @@ nav .left {
   height: 100vh;
   left: -200vw;
   transition: left 250ms ease;
-  box-sizing: border-box;
+
   text-align: left;
 }
 .fix {
@@ -92,16 +91,15 @@ nav ul {
  text-align: right;
  color: white;
  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 20px;
+ top: 30px;
+ right: 30px;
+ font-size: 30px;
 }
 
 .left a{
   font-weight: 400;
   letter-spacing: 1px;
 }
-
 .left {
   justify-content: flex-start;
 }
@@ -156,7 +154,7 @@ nav ul {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
+
     transition: .4s;
     
   }
@@ -169,7 +167,7 @@ nav ul {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
+
     transition: .4s;
   }
   
@@ -182,8 +180,7 @@ nav ul {
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
+  
     transform: translateX(26px);
   }
   .dark-open {
@@ -204,7 +201,7 @@ nav ul {
    text-align: center;
    align-items: center;
    justify-content: center;
-   /* background-color: #5A8970; */
+
   }
   .about-me h3 {
     font-size: 2.5rem;
@@ -212,7 +209,7 @@ nav ul {
   }
 
   .projects-wrapper {
-    /* background-color: #4B755E; */
+ 
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -283,108 +280,13 @@ nav ul {
     color: #B6C6BB;
   }
   footer {
-    /* background-color: #C9D6CD; */
+
     text-align: center;
     color: black;
   }
   .contact-form {
     display: none;
   }
-  /* .dark-mode {
-    background-color: #1C1860;
-    color: #58D4B3;
-  }
-  .white-color {
-    color: #DEE1E2;
-  }
-  .teal-color {
-    color: #58D4B3;
-  }
-  .pink-color {
-    color: #F58B97;
-  }
-  .navy-color {
-    color: #1C1860;
-  }
-  .navy-bgcolor {
-    background-color: #1C1860;
-  }
-  .teal-bgcolor {
-    background-color: #58D4B3;
-  }
-  .white-bgcolor {
-    background-color: #DEE1E2;
-  }
-  .navy-border {
-    border-color: #1C1860;
-  }
-  .black-color {
-    color: black;
-  }
-  .teal-border {
-    border-color: #58D4B3;
-  }
-  .white-border {
-    border-color: #DEE1E2;
-  } */
-  /* dark mode codes */
-/* 
-  
-  body {
-    background-color: #1C1860;
-  }
-  nav {
-    background-color: #1C1860;
-  }
-  nav button span {
-    background-color: white;
-  }
-  .main-title {
-    color: #58D4B3;
-    color: #F58B97;
-  }
-  nav .left {
-    background-color: #1C1860;
-    color: #58D4B3;
-  }
-  .close {
-    color: #58D4B3;
-  }
-  .contact-me {
-    color: #DEE1E2;
-  }
-  footer {
-    color: #DEE1E2;
-  }
-  .about-me h3 {
-    color: #F58B97;
-  }
-  .projects-h3 {
-    color: #F58B97;
-  }
-  .project-item p a {
-    background-color: #58D4B3;
-    color: #1C1860;
-    border-color: #1C1860;
-  }
-  .project-item p a:hover {
-    background-color: #DEE1E2;
-    color: black;
-  }
-  .project-item h4 {
-    color: #DEE1E2;
-  }
-  .contact-me button {
-    background-color: #58D4B3;
-    border-color: #58D4B3;
-  }
-  .contact-me button:hover {
-    background-color: #DEE1E2;
-    border-color: #DEE1E2;
-  }
-  .contact-me a:hover{
-    color: black;
-  } */
   /* tablet */
   @media screen  and (min-width: 768px) {
     .header nav .left {
@@ -400,12 +302,15 @@ nav ul {
     .projects-wrapper {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
+      
     }
     .projectItems {
       grid-column: 1 / 3;
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 10px;
+      justify-content: center;
+      align-items: center;
     }
     .item1 {
       grid-column: 1;
@@ -437,42 +342,6 @@ nav ul {
     .header {
       background-size: cover;
     }
-    .projects-h3 {
-      display: none;
-    }
-    .projects-wrapper {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      margin-bottom: 0;
-      column-gap: 15px;
-      row-gap: 0;
-      /* height: 100vh; */
-      overflow-y: scroll;
-    }
-    .projectItems {
-      
-      height: 100vh;
-    }
-    .project-item {
-      grid-column: 1;
-    }
-    .item1 {
-      grid-row: 1;
-    }
-    /* is there a way to span all the row instead of hardcoding */
-    .projects-wrapper .h3 {
-      grid-column: 2;
-      grid-row: 1 / 5;
-      background-color: #b0c4b9;
-    }
-     .projects-h3-inside {
-      display: block;
-      grid-column: 2;
-      font-family: 'Bebas Neue', serif;
-      font-size: 2rem;
-      
-    }
-
     .about-me {
       display: grid;
       grid-template-columns: 1fr 1fr;

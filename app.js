@@ -1,8 +1,7 @@
 $(() => {
-//color shceme https://www.isharearena.com/wp-content/uploads/2018/04/Smart-city-illustration-for-Website-header-UI.png
-//https://www.isharearena.com/wp-content/uploads/2018/04/Art-Website-UI-Header.jpg
+
 console.log('app.js', $)
-//toggle dark mode button, hamburger icon, nav separate elements
+
 const $body = $('body');
 const $header = $('.header');
 const $projectsWrapper = $('.projects-wrapper');
@@ -13,7 +12,7 @@ const $stylesheetLink = $('#styles');
 const toggleSlider = $('.slider, .slider:before');
 const $darkModeCheckbox = $('#darkmodeCheck');
 //use property to check for checked
-console.log($darkModeCheckbox.prop('checked'))
+//toggle between stylesheets
 toggleSlider.on('click', ()=>{
     if($darkModeCheckbox.prop('checked')){
         console.log($darkModeCheckbox.prop('checked'))
@@ -24,7 +23,8 @@ toggleSlider.on('click', ()=>{
 
 })
 //end dark mode toggle code
-//open nav page
+
+//navbar code
 $('nav button').on('click', () => {
     $('nav').toggleClass('open');
     $darkModeButton.toggleClass('dark-open');
@@ -41,14 +41,13 @@ $('.left li').on('click', ()=>{
     $darkModeButton.toggleClass('dark-open');
 })
 //close nav page
-//START ref https://codepen.io/_codemics/pen/PwEbYJ/
+//sticky nav code ref https://codepen.io/_codemics/pen/PwEbYJ/
 // grab the initial top offset of the navigation 
-var stickyNavTop = $('nav').offset().top;
+let stickyNavTop = $('nav').offset().top;
 		   	
 // our function that decides weather the navigation bar should have "fixed" css position or not.
-var stickyNav = function(){
- var scrollTop = $(window).scrollTop(); // our current vertical position from the top
-      
+let stickyNav = function(){
+ let scrollTop = $(window).scrollTop(); // our current vertical position from the top
  // if we've scrolled more than the navigation, change its position to fixed to stick to top,
  // otherwise change it back to relative
  if (scrollTop > stickyNavTop) { 
@@ -57,13 +56,12 @@ var stickyNav = function(){
      $('nav').removeClass('sticky'); 
  }
 };
-
 stickyNav();
 // and run it again every time you scroll
 $(window).scroll(function() {
  stickyNav();
 });
-//END
+//END sticky code
 //link spreadsheet for contents
 let sheetUrl = 'https://docs.google.com/spreadsheets/d/15rkSjf8Ls-mUssYyTipx13ORrQYkhsUKen46LnwLKno/edit?usp=sharing'
 let sheetAsJSON = 'https://spreadsheets.google.com/feeds/list/15rkSjf8Ls-mUssYyTipx13ORrQYkhsUKen46LnwLKno/od6/public/values?alt=json'
@@ -89,7 +87,6 @@ function app(projectsArr){
     console.log('inside app - projects', projectsArr)
     projectsArr.forEach( project => {
     i++;
-    // let $createDiv = $('<div>').addClass('project-item');
     let $createDiv = $('<div>').addClass(`project-item item${i}`);
     console.log($createDiv)
     let $addTitle = $('<h4>').text(project.title);
@@ -103,6 +100,6 @@ function app(projectsArr){
     })
 }
 //end  jquery
-//contact form ref https://www.w3schools.com/howto/howto_css_contact_form.asp
+//html contact form ref https://www.w3schools.com/howto/howto_css_contact_form.asp
 
 })

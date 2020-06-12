@@ -21,10 +21,10 @@ body {
     text-align: center;
     justify-content: center;
 }
-/* madelines code, will rewrite later */
+/* nav ref lecture */
 nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 15px 30px;
   background-color: #B0C4B9;
 }
@@ -38,9 +38,9 @@ nav .left {
   padding: 60px;
   display: block;
   height: 100vh;
-  left: -200vw;
+  left: -100vw;
   transition: left 250ms ease;
-  box-sizing: border-box;
+
   text-align: left;
 }
 .fix {
@@ -50,7 +50,7 @@ nav button span{
   height: 2px;
   width: 20px;
   margin: 4px 0;
-  background-color: #4E7D64;
+
   display: block;
 }
 nav button {
@@ -81,9 +81,9 @@ nav ul {
  text-align: right;
  color: white;
  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 20px;
+ top: 30px;
+ right: 30px;
+ font-size: 30px;
 }
 
 .left a{
@@ -98,6 +98,7 @@ nav ul {
 .left a {
   margin-right: 30px;
 }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -145,7 +146,6 @@ nav ul {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
     transition: .4s;
     
   }
@@ -158,7 +158,6 @@ nav ul {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
     transition: .4s;
   }
   
@@ -171,8 +170,6 @@ nav ul {
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
   .dark-open {
@@ -193,7 +190,7 @@ nav ul {
    text-align: center;
    align-items: center;
    justify-content: center;
-   /* background-color: #5A8970; */
+
   }
   .about-me h3 {
     font-size: 2.5rem;
@@ -201,7 +198,7 @@ nav ul {
   }
 
   .projects-wrapper {
-    /* background-color: #4B755E; */
+   
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -272,7 +269,7 @@ nav ul {
     color: #B6C6BB;
   }
   footer {
-    /* background-color: #C9D6CD; */
+  
     text-align: center;
     color: black;
   }
@@ -358,9 +355,7 @@ nav ul {
       grid-template-columns: 1fr 1fr;
       column-gap: 10px;
     }
-    .h3 {
-      background-color: red;
-    }
+
     .item1 {
       grid-column: 1;
     }
@@ -391,47 +386,8 @@ nav ul {
   }
   /* desktop */
   @media screen and (min-width: 1024px) {
-
     .header {
       background-size: cover;
-    }
-    .projects-h3 {
-      display: none;
-    }
-    .projects-wrapper {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      margin-bottom: 0;
-      column-gap: 15px;
-      row-gap: 0;
-      height: 100vh;
-    }
-    .projectItems {
-      overflow-y: scroll;
-      height: 100vh;
-    }
-    .project-item  {
-      grid-column: 1;
-    }
-    .item1 {
-      grid-row: 1;
-    }
-    /* is there a way to span all the row instead of hardcoding */
-    .projects-wrapper .h3 {
-      grid-column: 2;
-      grid-row: 1 / 5;
-      height: 100%;
-      width: 100%;
-      background-color: red;
-    }
-     .projects-h3-inside {
-      display: grid;
-      grid-column: 2;
-      grid-row: 1;
-      /* height: 100%; */
-      margin-top: 50vh;
-      font-family: 'Bebas Neue', serif;
-      font-size: 2rem;
     }
     .about-me {
       display: grid;
