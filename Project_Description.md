@@ -42,16 +42,35 @@ Mobile - https://res.cloudinary.com/dzfyk3r12/image/upload/v1591590835/portfolio
 |Project Previews	|H	|3hr	|9+hr	|-hr
 |Regular Nav	|H	|1H	|3hr	|-hr
 |Adding Contact Form	|H	|2hr	|1hr	|-hr
-|Other sections and flex	|M	|4hr	|-hr	|-hr
+|Other sections and flex	|M	|4hr	|2hr	|-hr
 |Working with API	|H	|3hrs	|1hr	|-hr
 |Responsive	|H	|3hr	|12+hr	|-hr
-|Social Media Icons	|L	|1hr	|-hr	|-hr
-|Total	|H	|18hrs	|-hrs	|-hrs
+|Social Media Icons	|L	|1hr	|0hr	|-hr
+|Total	|H	|18hrs	|31hrs	|-hrs
 
 # PostMVP
 | Component	| Priority	| Estimated Time |	Time Invested	| Actual Time
 |---|---|---|---|---|
-|Carousel	|M	|3hr	|-hr	|-hr
+|Carousel	|M	|3hr	|0hr	|-hr
 |Dark mode	|L	|1hr	|9hr	|-hr
-|Fade-in on scroll	|L	|1H	|-hr	|-hr
-|Total	|H	|5hrs	|-hrs	|-hrs
+|Fade-in on scroll	|L	|1H	|0hr	|-hr
+|Total	|H	|5hrs	|9hrs	|-hrs
+
+# Code Snippet
+```
+toggleSlider.on('click', ()=>{
+    if($darkModeCheckbox.prop('checked')){
+        console.log($darkModeCheckbox.prop('checked'))
+        $stylesheetLink.attr('href', 'style.css');
+    } else if($darkModeCheckbox.prop('checked') === false){
+        $stylesheetLink.attr('href', 'darkstyle.css');
+    }
+})
+```
+I struggled thinking of a way to toggle between stylesheets and I used this conditional to target my problem, and I'm very proud of it.
+
+# Issues/Resolutions
+* In mobile version, clicking on navbar links didn't close out the navbar before jumping to that section in the page
+  *This was resolved through adding another click event on each navbar link*
+* For the dark mode style, there was a lot of specificity involved, and I needed to individually style multiple elements
+  *This was resolved by creating a separate stylesheet rather than adding upwards of 15+ new classes on elements*
