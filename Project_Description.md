@@ -73,4 +73,4 @@ I struggled thinking of a way to toggle between stylesheets and I used this cond
 * In mobile version, clicking on navbar links didn't close out the navbar before jumping to that section in the page
   *This was resolved through adding another click event on each navbar link*
 * For the dark mode style, there was a lot of specificity involved, and I needed to individually style multiple elements
-  *This was resolved by creating a separate stylesheet rather than adding upwards of 15+ new classes on elements
+  *This was resolved by creating a separate stylesheet rather than adding upwards of 15+ new classes on elements*
