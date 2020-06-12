@@ -335,6 +335,9 @@ nav ul {
     nav ul{
       margin: 0;
     }
+    .about-me {
+      font-size: 1.7rem;
+    }
   }
   /* desktop */
   @media screen and (min-width: 1024px) {
@@ -345,6 +348,7 @@ nav ul {
     .about-me {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      font-size: 2rem;
     }
     .about-me h3 {
       margin-top: 50vh;
