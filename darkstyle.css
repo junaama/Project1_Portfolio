@@ -395,7 +395,7 @@ nav ul {
     .about-me {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     .about-me h3 {
       margin-top: 50vh;
