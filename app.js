@@ -11,10 +11,17 @@ const $darkModeButton = $('.dark-mode-container');
 const $stylesheetLink = $('#styles');
 //dark mode toggle button
 const toggleSlider = $('.slider, .slider:before');
+const $darkModeCheckbox = $('#darkmodeCheck');
+//use property to check for checked
+console.log($darkModeCheckbox.prop('checked'))
 toggleSlider.on('click', ()=>{
-    
-    $stylesheetLink.attr('href', 'darkstyle.css');
-    
+    if($darkModeCheckbox.prop('checked')){
+        console.log($darkModeCheckbox.prop('checked'))
+        $stylesheetLink.attr('href', 'style.css');
+    } else if($darkModeCheckbox.prop('checked') === false){
+        $stylesheetLink.attr('href', 'darkstyle.css');
+    }
+
 })
 //end dark mode toggle code
 //open nav page
