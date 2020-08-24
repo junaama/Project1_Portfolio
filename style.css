@@ -358,8 +358,10 @@ nav ul {
       height: 100%;
     }
     .contact-container {
+      /*
       display: grid;
       grid-template-columns: 1fr 1fr;
+      */
       height: 100vh;
     }
     .contact-me {
